@@ -1,0 +1,4 @@
+==========================================================
+nesta pasta você adiciona alguma dependência do
+projeto caso for utilizar algum .JAR por exemplo.
+==========================================================
