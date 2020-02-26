@@ -6,8 +6,11 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
@@ -53,13 +56,18 @@ public class Calculator extends JFrame{
 		
 		
 		this.setBounds(0, 0, 280, 310);
-		this.setTitle("Calculadora Cristina");
+		this.setTitle("Calculadora");
 		this.setLocation(300, 300);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.getContentPane().setLayout(null);
 		this.setMinimumSize(new Dimension(280, 330));
+		getContentPane().setBackground(Color.orange);
 		
+		ImageIcon icon;
+		icon = new ImageIcon(getClass().getResource("/icon/calc.png"));
+		this.setIconImage(icon.getImage());
 		//OBJETO DOS BOTOES DA CALCULADORA
+		
 		
 		leitura = 0;
 		memoria = 0;
@@ -202,7 +210,7 @@ public class Calculator extends JFrame{
 		numero0.setFont(new Font("Arial", 1, 15));
 		this.add(numero0);
 		
-		//AÃ‡OES DOS BOTOES DA CALCULADORA
+		//AÇOES DOS BOTOES DA CALCULADORA
 		
 		numero1.addActionListener(new ActionListener() {
 			
